@@ -1,0 +1,14 @@
+.page { padding: 40px; background: #f4f7f6; min-height: 100vh; font-family: sans-serif; }
+.card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.message { color: #2563eb; font-weight: bold; margin-bottom: 15px; }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; padding: 12px; background: #f8fafc; border-bottom: 2px solid #e2e8f0; }
+td { padding: 12px; border-bottom: 1px solid #e2e8f0; }
+.avatar-img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 1px solid #ddd; }
+.edit-input { padding: 6px; border: 1px solid #2563eb; border-radius: 4px; width: 100%; }
+.actions { display: flex; gap: 8px; }
+button { padding: 8px 12px; border-radius: 6px; border: none; cursor: pointer; background: #2563eb; color: white; }
+.secondary { background: #64748b; }
+.danger { background: #ef4444; }
+button:hover { opacity: 0.8; }
