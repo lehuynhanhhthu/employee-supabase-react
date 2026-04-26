@@ -84,16 +84,18 @@ function App() {
           <table>
             <thead>
               <tr>
-                <th>Avatar</th>
+                <th className="text-center">STT</th>
+                <th className="text-center">Avatar</th>
                 <th>Tên nhân viên</th>
                 <th>Ngày tạo</th>
-                <th>Thao tác</th>
+                <th className="text-center">Thao tác</th>
               </tr>
             </thead>
             <tbody>
-              {employees.map(emp => (
+              {employees.map((emp, index) => (
                 <tr key={emp.id}>
-                  <td>
+                  <td className="text-center font-bold">{index + 1}</td>
+                  <td className="text-center">
                     <img className="avatar-img" src={`${AVATAR_BASE_URL}${emp.avatar}`} alt="avatar" />
                   </td>
                   <td>
@@ -102,6 +104,7 @@ function App() {
                         className="edit-input"
                         value={editingName} 
                         onChange={e => setEditingName(e.target.value)} 
+                        autoFocus
                       />
                     ) : emp.name}
                   </td>
